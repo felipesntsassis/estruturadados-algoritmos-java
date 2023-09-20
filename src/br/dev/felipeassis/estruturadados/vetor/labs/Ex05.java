@@ -11,10 +11,10 @@ public class Ex05 {
         lista.adiciona("C");
         lista.adiciona("D");
         lista.adiciona("E");
+
         System.out.println(lista);
         lista.limpar();
         System.out.println(lista);
-
     }
 
 }
