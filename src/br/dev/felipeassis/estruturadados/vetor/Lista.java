@@ -93,6 +93,20 @@ public class Lista<T> {
         if (pos > -1) remove(pos);
     }
 
+    public void limpar() {
+        // opção 1
+        elementos = (T[]) new Object[elementos.length];
+
+        // opção 2
+        // tamanho = 0;
+
+        // opção 3
+        /*for (int i = 0; i < this.tamanho; i++) {
+            elementos[i] = null;
+        }
+        tamanho = 0;*/
+    }
+
     public int lastIndexOf(T element) {
         return busca(element);
     }
