@@ -96,6 +96,7 @@ public class Lista<T> {
     public void limpar() {
         // opção 1
         elementos = (T[]) new Object[elementos.length];
+        tamanho = 0;
 
         // opção 2
         // tamanho = 0;
