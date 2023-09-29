@@ -7,6 +7,10 @@ public class Lista<T> {
     private T[] elementos;
     private int tamanho;
 
+    public Lista() {
+        this(10);
+    }
+
     public Lista(int capacidade) {
         this.elementos = (T[]) new Object[capacidade]; // preferir esta solulção
         this.tamanho = 0;
