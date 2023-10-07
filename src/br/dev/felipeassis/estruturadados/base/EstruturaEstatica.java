@@ -55,6 +55,10 @@ public class EstruturaEstatica<T> {
         }
     }
 
+    public boolean estaVazia() {
+        return tamanho == 0;
+    }
+
     public int tamanho() {
         return this.tamanho;
     }
