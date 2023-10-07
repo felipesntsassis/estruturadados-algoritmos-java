@@ -15,7 +15,7 @@ public class Ex01 {
             int numero = scan.nextInt();
 
             if (numero % 2 == 0) {
-                System.out.println("Empilhand12o número " + numero);
+                System.out.println("Empilhando número " + numero);
                 pilha.empilha(numero);
             } else {
                 if (pilha.estaVazia()) {
@@ -26,9 +26,18 @@ public class Ex01 {
             }
         }
 
-        if (!pilha.estaVazia()) {
-            System.out.println(pilha);
+        System.out.println("Todos os números foram lidos. Desempilhando números da pilha");
+        while(!pilha.estaVazia()) {
+            Integer desempilhado = pilha.desempilha();
+
+            if (desempilhado == null) {
+                System.out.println("A pilha está vazia!");
+            } else {
+                System.out.println("Desempilhando número " + pilha.desempilha());
+            }
         }
+
+        System.out.println("Todos os elementos foram desempilhados!");
     }
 
 }
