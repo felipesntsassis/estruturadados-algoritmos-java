@@ -33,7 +33,7 @@ public class Ex01 {
             if (desempilhado == null) {
                 System.out.println("A pilha está vazia!");
             } else {
-                System.out.println("Desempilhando número " + pilha.desempilha());
+                System.out.println("Desempilhando número " + desempilhado);
             }
         }
 
