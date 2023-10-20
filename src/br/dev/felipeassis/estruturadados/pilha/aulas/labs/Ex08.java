@@ -24,7 +24,7 @@ public class Ex08 {
             System.out.println("Original: " + original);
             System.out.println("Destino: " + dest);
             System.out.println("Auxiliar: " + aux);
-            torreDeHanoi(n - 1, aux, dest, aux);
+            torreDeHanoi(n - 1, aux, dest, original);
         }
     }
 }
