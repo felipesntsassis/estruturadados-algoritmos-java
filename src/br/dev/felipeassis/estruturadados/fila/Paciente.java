@@ -31,14 +31,15 @@ public class Paciente implements Comparable<Paciente> {
 
     @Override
     public int compareTo(Paciente o) {
-        if (prioridade > o.getPrioridade()) {
-            return 1;
-        }
-        if(prioridade < o.getPrioridade()) {
-            return -1;
-        }
-
-        return 0;
+//        if (prioridade > o.getPrioridade()) {
+//            return 1;
+//        }
+//        if(prioridade < o.getPrioridade()) {
+//            return -1;
+//        }
+//
+//        return 0;
+        return Integer.compare(prioridade, o.getPrioridade());
     }
 
     @Override
