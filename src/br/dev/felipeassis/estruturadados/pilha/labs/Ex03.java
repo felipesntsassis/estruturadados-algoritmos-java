@@ -1,4 +1,4 @@
-package br.dev.felipeassis.estruturadados.pilha.aulas.labs;
+package br.dev.felipeassis.estruturadados.pilha.labs;
 
 import br.dev.felipeassis.estruturadados.pilha.Pilha;
 
