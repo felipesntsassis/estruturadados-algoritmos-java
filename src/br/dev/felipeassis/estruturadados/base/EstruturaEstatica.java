@@ -27,7 +27,7 @@ public class EstruturaEstatica<T> {
     }
 
     protected boolean adiciona(int posicao, T elemento) throws IllegalAccessException {
-        if (!(posicao >= 0 && posicao < tamanho)) {
+        if (posicao < 0 || posicao > tamanho) {
             throw new IllegalAccessException("Posição inválida!");
         }
 
