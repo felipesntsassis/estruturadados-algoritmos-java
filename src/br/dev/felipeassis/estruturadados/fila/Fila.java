@@ -12,7 +12,7 @@ public class Fila<T> extends EstruturaEstatica<T> {
         super(capacidade);
     }
 
-    public void enfileira(T elemento) {
+    public void enfileirar(T elemento) {
 //        this.elementos[this.tamanho] = elemento;
 //        this.tamanho ++;
 //        this.elementos[this.tamanho++] = elemento;
@@ -25,6 +25,19 @@ public class Fila<T> extends EstruturaEstatica<T> {
         }
 
         return this.elementos[0];
+    }
+
+    public T desenfileirar() throws IllegalAccessException {
+        final int POS = 0;
+
+        if (this.estaVazia()) {
+            return null;
+        }
+
+        T elementoASerRemovido = this.elementos[0];
+        remove(POS);
+
+        return elementoASerRemovido;
     }
 
 }

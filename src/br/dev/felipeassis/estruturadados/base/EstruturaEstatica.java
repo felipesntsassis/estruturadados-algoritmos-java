@@ -59,6 +59,17 @@ public class EstruturaEstatica<T> {
         return tamanho == 0;
     }
 
+    protected void remove(int posicao) throws IllegalAccessException {
+        if (!(posicao >= 0 && posicao < tamanho)) {
+            throw new IllegalAccessException("Posição inválida!");
+        }
+        for (int i = posicao; i < tamanho; i++) {
+            elementos[i] = elementos[i + 1];
+        }
+
+        tamanho --;
+    }
+
     public int tamanho() {
         return this.tamanho;
     }
