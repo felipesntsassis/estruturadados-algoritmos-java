@@ -3,8 +3,6 @@ package br.dev.felipeassis.estruturadados.fila.labs;
 import br.dev.felipeassis.estruturadados.fila.Fila;
 import br.dev.felipeassis.estruturadados.fila.FilaComPrioridade;
 
-import static java.lang.Thread.sleep;
-
 public class Ex01 {
 
     public static void main(String[] args) throws IllegalAccessException, InterruptedException {
@@ -21,7 +19,7 @@ public class Ex01 {
         while (!documentos.estaVazia()) {
             Documento documento = documentos.desenfileirar();
             System.out.printf("Imprimindo documento %s...%n", documento.getNome());
-            sleep(documento.getQuantidadeDeFolhas() * 1000L);
+            Thread.sleep(documento.getQuantidadeDeFolhas() * 1000L);
             System.out.printf("documento %s impresso!%n", documento.getNome());
         }
     }
